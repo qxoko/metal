@@ -14,9 +14,9 @@ It should be clear, however, that Metal is not a magic bullet for all text rende
 
 #### After
 
-> Ăłɨĉə ŵăŝ ьèğîɴɲĭŉġ ţö ɠêţ vɘɹý ʈìʀəđ ôf šíťʈĩɴġ ʙŷ ɦěʀ šĩşţèŗ óŋ ŧĥę ьàɲʞ, åňɗ őf ɧąvîñğ ņöťɦĩŉɠ ţö ɗŏ:  øɴčê ŏʀ ʈŵĭčę
-šɧê ħăɗ pěəpĕɗ ìñţô ťɧĕ ьøõk ħěɾ ŝīŝťėŕ ŵąŝ ŗêàɗĭńġ, ʙûţ íʈ ɦāɗ ŉő pîćʈůʀéş ōř çôŋvəřŝâťĭøňś īń ìŧ, ŵïţĥŏúť pĩçţuřęş őʁ
-çõŋvęɹśáŧïòŋ?'
+> Åľįċė ŵąś ьęɠĩńɴïŋğ ŧő ĝəʈ vėɼŷ ţîʁèď ŏf śĩŧţɨňĝ ʙŷ ĥéʁ ŝɨśŧɘŕ ɵñ ťħĕ ʙąñʞ, àɴɗ ôf ĥãvĭňğ ɲŏťħïɲɠ ťŏ ɗɵ:  öɲćě óʁ ţŵĩćę
+şħê ɧãɗ pɘêpɘɗ ĭŉťó ţɦě ьõõķ ɧɘŕ šíŝʈěʁ ŵáš řēáďĭňɠ, ʙûŧ íţ ĥăɗ ŉô pīċʈūɾęš öŕ ċöɲvéʁśąťĭŏņŝ ìň ɨţ, 'áŋđ ŵħąť ɨš ʈĥĕ ūśė
+ ɵf å ьôök,' ţĥőüğɦť Åľïçė 'ŵīţħòuʈ pĩčťūřėś òř čōŉvěŗśăŧɨɵɲ?'
 
 Metal was inspired by a segment on internationalisation in [this GDC talk about *Firewatch*](https://www.youtube.com/watch?v=wj-2vbiyHnI), given by William Armstrong and Patrick Ewing.
 
