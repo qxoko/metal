@@ -2,7 +2,7 @@
 
 > *"English, but metal"*
 
-Metal is a tool that converts English text a legible, Zalgo-like character swap for the purposes of testing localisation and UTF-8 character support in game engines, websites and other tools.
+Metal is a tool that converts English text into a legible, Zalgo-like character swap for the purposes of testing localisation and UTF-8 character support in game engines, websites and other tools.
 
 By rewriting basic ASCII characters into recognisable, accented alternatives, an English-reading programmer can immediately see where and how text is breaking in a rendering pipeline.
 
