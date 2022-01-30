@@ -9,26 +9,32 @@ import (
 
 func main() {
 	args := os.Args[1:]
-	text := ""
+	enum := metal.Vowels
 
-	// if an argument exists, treat it as the
-	// input.  otherwise, read the Stdin pipe
 	if len(args) > 0 {
-		text = args[0]
-	} else {
-		raw_text, err := ioutil.ReadAll(os.Stdin)
-
-		if err != nil {
-			panic(err)
+		switch args[0] {
+		case "--vowels":
+			enum = metal.Vowels
+		case "--all":
+			enum = metal.All
 		}
-
-		text = string(raw_text)
 	}
 
-	// write output directly
-	fmt.Fprintf(os.Stdout, metal.Anodize(text))
+	// read the catted file in
+	raw_text, err := ioutil.ReadAll(os.Stdin)
 
-	// adds a newline for terminal output
+	if err != nil {
+		panic(err)
+	}
+
+	text := string(raw_text)
+
+	// write output directly
+	fmt.Fprintf(os.Stdout, metal.Anodize(text, enum))
+
+	// this is supposed to detect a newline for output but we're
+	// not quite at isatty levels of accuracy; basically it
+	// doesn't work sometimes
 	o, _ := os.Stdout.Stat()
 
 	if (o.Mode() & os.ModeCharDevice) == os.ModeCharDevice {

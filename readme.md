@@ -14,19 +14,20 @@ It should be clear, however, that Metal is not a magic bullet for all text rende
 
 #### After
 
-> Åľįċė ŵąś ьęɠĩńɴïŋğ ŧő ĝəʈ vėɼŷ ţîʁèď ŏf śĩŧţɨňĝ ʙŷ ĥéʁ ŝɨśŧɘŕ ɵñ ťħĕ ʙąñʞ, àɴɗ ôf ĥãvĭňğ ɲŏťħïɲɠ ťŏ ɗɵ:  öɲćě óʁ ţŵĩćę
-şħê ɧãɗ pɘêpɘɗ ĭŉťó ţɦě ьõõķ ɧɘŕ šíŝʈěʁ ŵáš řēáďĭňɠ, ʙûŧ íţ ĥăɗ ŉô pīċʈūɾęš öŕ ċöɲvéʁśąťĭŏņŝ ìň ɨţ, 'áŋđ ŵħąť ɨš ʈĥĕ ūśė
- ɵf å ьôök,' ţĥőüğɦť Åľïçė 'ŵīţħòuʈ pĩčťūřėś òř čōŉvěŗśăŧɨɵɲ?'
+> Âlìcę wãs bègínnìng tó gēt vërý tïrëd óf sįttĩng bŷ hęr sĭstėr õn thė bānk, ãnd őf hăvįng nöthìng tő dö:  òncĕ õr twĭcé shë håd péêpëd ìntó thë bóők hēr sįstĕr wãs rĕådĭng, bŭt ït håd nõ píctürës ōr cŏnvěrsätįôns ïn ìt, 'ánd whãt ïs thē usę ɵf ă bòôk,' thóűght Älícé 'wĩthõut pïcturęs ór cônvèrsåtìŏn?'
 
 Metal was inspired by a segment on internationalisation in [this GDC talk about *Firewatch*](https://www.youtube.com/watch?v=wj-2vbiyHnI), given by William Armstrong and Patrick Ewing.
 
 ## Standalone Usage
 
-	$ cat input.txt | metal > output.txt
+	$ cat input.txt | metal --all > output.txt
 
-or —
+The optional flags are:
 
-	$ metal "some input string"
+	--vowels (default)
+	--all
+
+...where "vowels" will only do vowel substitution, but "all" will provide consonants as well.
 
 ## Standalone Compilation
 
@@ -43,5 +44,10 @@ The character table can also be modified or rebuilt from the `source.txt` file i
 ```go
 import "github.com/qxoko/metal"
 
-some_output := metal.Anodize(some_input)
+some_output := metal.Anodize(some_input, metal.Vowels)
 ```
+
+The available enums are:
+
+	metal.All
+	metal.Vowels
