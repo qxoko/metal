@@ -18,6 +18,19 @@ It should be clear, however, that Metal is not a magic bullet for all text rende
 
 Metal was inspired by a segment on internationalisation in [this GDC talk about *Firewatch*](https://www.youtube.com/watch?v=wj-2vbiyHnI), given by William Armstrong and Patrick Ewing.
 
+## Library Usage
+
+```go
+import "github.com/qxoko/metal"
+
+some_output := metal.Anodize(some_input, metal.Vowels)
+```
+
+The available enums are:
+
+	metal.All
+	metal.Vowels
+
 ## Standalone Usage
 
 	$ cat input.txt | metal --all > output.txt
@@ -38,16 +51,3 @@ The character table can also be modified or rebuilt from the `source.txt` file i
 	$ go generate
 
 — to rebuild it.
-
-## Library Usage
-
-```go
-import "github.com/qxoko/metal"
-
-some_output := metal.Anodize(some_input, metal.Vowels)
-```
-
-The available enums are:
-
-	metal.All
-	metal.Vowels
